@@ -6,10 +6,10 @@ test:
 	python -m pytest -vv --cov=hello --cov=mylib test_*.py
 
 format:	
-	black *.py
+	black *.py mylib/*.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py 
+	pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
 
 container-lint:
 	docker run --rm -i hadolint/hadolint < Dockerfile
@@ -17,6 +17,6 @@ container-lint:
 refactor: format lint
 
 deploy:
-	#deploy not implemented
+#echo "deploy not implemented"
 	
 all: install lint test format deploy

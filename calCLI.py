@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from mylib.calc import *
+from mylib.calc import add, sub, mul, div, power
 import click
 
 
@@ -53,15 +53,15 @@ def div_cmd(a, b):
     click.secho(f"{a}/{b}= {div(a,b)}", fg="green")
 
 
-@cli.command("pow")
+@cli.command("power")
 @click.argument("a", type=float)
 @click.argument("b", type=float)
-def pow_cmd(a, b):
+def power_cmd(a, b):
     """power of a number
     ex:
     ./calCLI.py pow 1 2"""
     # use colored o/p tp print the result
-    click.secho(f"{a}**{b}= {pow(a,b)}", fg="green")
+    click.secho(f"{a}**{b}= {power(a,b)}", fg="green")
 
 
 if __name__ == "__main__":
