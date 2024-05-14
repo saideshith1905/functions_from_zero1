@@ -1,0 +1,10 @@
+pylint==3.1.0
+click==8.1.7
+pytest==8.2.0
+pytest-cov==5.0.0
+fastapi==0.111.0
+uvicorn==0.29.0
+black==24.4.2
+wikipedia==1.4.0
+ipdb
+git+https://github.com/LIAAD/yake
