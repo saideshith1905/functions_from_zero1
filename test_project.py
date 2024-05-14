@@ -34,8 +34,8 @@ def test_div_cmd(runner):
     assert "0.5" in result.output
 
 
-def test_pow_cmd(runner):
-    result = runner.invoke(cli, ["pow", "2", "2"])
+def test_power_cmd(runner):
+    result = runner.invoke(cli, ["power", "2", "2"])
     assert result.exit_code == 0
     assert "4" in result.output
 
