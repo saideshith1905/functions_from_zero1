@@ -2,6 +2,10 @@
 
 [![Codespaces Prebuilds](https://github.com/saideshith1905/functions_from_zero1/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/saideshith1905/functions_from_zero1/actions/workflows/codespaces/create_codespaces_prebuilds)
 
+[![CI](https://github.com/saideshith1905/functions_from_zero1/actions/workflows/main.yml/badge.svg)](https://github.com/saideshith1905/functions_from_zero1/actions/workflows/main.yml)
+
+
+
 # functions-from-zero1
 repo to learn  functions
 
