@@ -1,6 +1,6 @@
 
 
-[![CI](https://github.com/saissd/functions-from-zero1/actions/workflows/main.yml/badge.svg)](https://github.com/saissd/functions-from-zero1/actions/workflows/main.yml)
+[![Codespaces Prebuilds](https://github.com/saideshith1905/functions_from_zero1/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/saideshith1905/functions_from_zero1/actions/workflows/codespaces/create_codespaces_prebuilds)
 
 # functions-from-zero1
 repo to learn  functions
