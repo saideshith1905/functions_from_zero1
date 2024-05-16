@@ -7,5 +7,5 @@ def test_distance_between_two_points():
     ) == 7227.494205942177
 
 
-def test_print_cities():
+def test_cities_list():
     assert "New York" in cities_list()
