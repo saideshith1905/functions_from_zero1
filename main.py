@@ -7,6 +7,7 @@ from mylib.logistics import (
     get_coordinates,
     travel_time,
 )
+from mylib.wiki import get_wiki_keywords
 
 
 app = FastAPI()
@@ -56,6 +57,14 @@ async def travel(city1: City, city2: City):
         "time_travel": f"{hours} hours"
         # travel_time(city1.name,(city2.name),speed)
     }
+
+
+@app.post("/keywords")
+async def keywords(city: City):
+    """Get the top 10 keywords from the content of a page with POST HTTP Method
+    Returns back the top 10 keywords from the content of a page
+    """
+    return {"keywords": get_wiki_keywords(city.name)}
 
 
 if __name__ == "__main__":

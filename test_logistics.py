@@ -16,9 +16,13 @@ def test_distance_between_two_points():
 
 
 # build a test for teavel_time
-def test_travel_time():
-    hours = travel_time("New York", "Los Angeles")
-    assert hours == 120
+def test_travel_time(client):
+    response = client.post(
+        "/travel",
+        json={"city1": {"name": "New York"}, "city2": {"name": "Los Angeles"}},
+    )
+    assert response.status_code == 200
+    assert response.json() == {"time_travel": "120 hours"}
 
 
 def test_cities_list():
